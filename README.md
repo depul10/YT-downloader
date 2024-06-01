@@ -26,7 +26,7 @@ Welcome to the YouTube Downloader web app, powered by Flask and yt-dlp! This pro
 3. **Enter the URL of the YouTube Video** you want to download and choose your preferred format (MP4 or MP3).
 4. **Click the "Download" Button** to start the download.
 5. **Once the Download is Complete**, you'll receive a success message along with a "Back" button to return to the main page.
-6. **the video will be in the folder of the repository**
+6. **The video will be in the folder of the repository**
 
 ## Dependencies 📦
 - Flask
