@@ -1,16 +1,16 @@
-# YouTube Downloader with Flask 🎥🚀
+# YouTube Downloader🎥🚀
 
 ## Overview ℹ️
-Welcome to the YouTube Downloader web application, powered by Flask and yt-dlp! This project allows you to effortlessly download your favorite YouTube videos in both MP4 and MP3 formats.
+Welcome to the YouTube Downloader web app, powered by Flask and yt-dlp! This project allows you to effortlessly download your favorite YouTube videos in both MP4 and MP3 formats.
 
 ## Installation 🛠️
 1. **Clone the Repository**: 
     ```bash
-    git clone https://github.com/your_username/your_repository.git
+    git clone https://github.com/depul10/YT-downloader.git
     ```
 2. **Navigate to the Project Directory**:
     ```bash
-    cd your_repository
+    cd YT-downloader
     ```
 3. **Install Required Packages**:
     ```bash
@@ -20,12 +20,13 @@ Welcome to the YouTube Downloader web application, powered by Flask and yt-dlp! 
 ## Usage 🚀
 1. **Run the Application**:
     ```bash
-    python app.py
+    python yt.py
     ```
 2. **Open Your Web Browser** and go to `http://localhost:5000`.
 3. **Enter the URL of the YouTube Video** you want to download and choose your preferred format (MP4 or MP3).
-4. **Click the "Scarica" Button** to start the download.
+4. **Click the "Download" Button** to start the download.
 5. **Once the Download is Complete**, you'll receive a success message along with a "Back" button to return to the main page.
+6. **the video will be in the folder of the repository**
 
 ## Dependencies 📦
 - Flask
