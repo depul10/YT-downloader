@@ -16,6 +16,12 @@ Welcome to the YouTube Downloader web app, powered by Flask and yt-dlp! This pro
     ```bash
     pip install -r requirements.txt
     ```
+| Feature          | Our YT-Downloader  | Online Downloaders  |
+|------------------|--------------------|---------------------|
+| Telemetry        | ✅ 0 telemetry     | ❌ collects cookies & data|
+| Privacy          | ✅ Privacy         | ❌ Often compromised      |
+| File Size Limit  | ✅ No limits       | ❌ Always restricted      |
+| Open Source      | ✅ Open Source     | ❌ Closed Source          |
 
 ## Usage 🚀
 1. **Run the Application**:
