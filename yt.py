@@ -3,7 +3,6 @@ import yt_dlp
 
 app = Flask(__name__)
 
-# Opzioni di configurazione predefinite per yt-dlp
 default_ydl_opts = {
     'format': 'best',
     'outtmpl': '%(title)s.%(ext)s',
@@ -15,8 +14,7 @@ def index():
         url = request.form['url']
         format = request.form['format']
 
-        # Imposta le opzioni di yt-dlp in base al formato selezionato dall'utente
-        ydl_opts = default_ydl_opts.copy()  # Crea una copia delle opzioni predefinite
+        ydl_opts = default_ydl_opts.copy()
         if format == 'mp3':
             ydl_opts['format'] = 'bestaudio/best'
             ydl_opts['postprocessors'] = [{
@@ -24,6 +22,10 @@ def index():
                 'preferredcodec': 'mp3',
                 'preferredquality': '192',
             }]
+        
+        # Youtube Shorts Support
+        if "shorts" in url:
+            ydl_opts['format'] = 'bestvideo+bestaudio/best'
 
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             ydl.download([url])
@@ -31,7 +33,7 @@ def index():
         return render_template_string('''
         <div class="container mt-5">
             <div class="alert alert-success" role="alert">
-                <b>Video Downloaded! check the folder</b>
+                <b>Video Downloaded! check the folde</b>
             </div>
             <br>
             <a class="btn btn-primary" font-size: 35px; href="/">Back</a>
