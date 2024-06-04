@@ -1,4 +1,5 @@
 # YouTube Downloader🎥🚀
+Supported Platforms: Youtube, Instagram Reels, Tiktok
 
 ## Overview ℹ️
 Welcome to the YouTube Downloader web app, powered by Flask and yt-dlp! This project allows you to effortlessly download your favorite YouTube videos in both MP4 and MP3 formats.
